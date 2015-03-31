@@ -1,0 +1,18 @@
+{
+  "name": "io-router",
+  "version": "1.0.0",
+  "description": "Easy routing for socket.io",
+  "keywords": ["socket.io", "router", "routing"],
+  "main": "./src/index.js",
+  "repository": "git@github.com:RainPhilosopher/io-router.git",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tymoteusz Dzienniak",
+  "license": "MIT",
+  "dependencies": {
+    "check-types": "^3.1.1",
+    "debug": "^2.1.3",
+    "node.extend": "^1.1.3"
+  }
+}
