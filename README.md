@@ -13,11 +13,6 @@ var server = app.listen('8080', function () {
     io = io(server)
 
     require('io-router')(io);
-
-    io.route('hejka', function (req) {
-        console.log(req.data);
-        req.respond('filkus')
-    })
   
     io.route('dummy', function (req) {
         console.log(req.data);
