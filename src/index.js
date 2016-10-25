@@ -52,8 +52,7 @@ module.exports = function (io, options) {
     }
 
     function init(socket) {
-        for (var name in routes) {
-            
+        Object.keys(routes).forEach(function (name) {
             var callback = routes[name];
 
             socket.on(name, function (data, respond) {
@@ -76,7 +75,7 @@ module.exports = function (io, options) {
 
                 return callback(request);
             });
-        }
+        });
     }
 
     if (options.initOnConnection) {
